@@ -1,0 +1,52 @@
+{
+  "n_donors_main": 30,
+  "optimizer_main": "Nelder-Mead/ols",
+  "pre_rmspe": 159.17903961627442,
+  "pre_rmspe_pct_of_mean": 5.665578123185069,
+  "post_rmspe": 232.68772912752237,
+  "rmspe_ratio": 1.4617988001966338,
+  "gap_2020": 34.124849710909984,
+  "gap_2020_pct": 0.8535553642662804,
+  "gap_2021": -7.059122065529664,
+  "gap_2021_pct": -0.16524708563497764,
+  "gap_2022": 231.4259384899542,
+  "gap_2022_pct": 5.07559896758261,
+  "gap_2023": 370.02945143096804,
+  "gap_2023_pct": 7.665500066209173,
+  "gap_2024": 281.1117214351416,
+  "gap_2024_pct": 5.515015600357306,
+  "att_2020_21": 13.53286382269016,
+  "att_2020_24": 181.92656780028884,
+  "cum_gap_2020_21": 27.06572764538032,
+  "p_full_post": 0.8064516129032258,
+  "p_2020_21": 1.0,
+  "n_placebo_units": 31,
+  "placebo_rank_full": 25,
+  "placebo_rank_2021": 31,
+  "placebo_fig_shown": 29,
+  "placebo_fig_excluded": [
+    "Kazakhstan"
+  ],
+  "weights_main": {
+    "Georgia": 0.413,
+    "Cambodia": 0.28,
+    "Kazakhstan": 0.128,
+    "Tajikistan": 0.1,
+    "Rwanda": 0.077
+  },
+  "weights_no_georgia": {
+    "Cambodia": 0.71,
+    "Kazakhstan": 0.214,
+    "Mongolia": 0.045,
+    "Moldova": 0.032
+  },
+  "pre_rmspe_no_georgia": 168.8095110767383,
+  "gap_2020_no_georgia": 131.0255228918163,
+  "gap_2020_pct_no_georgia": 3.358711681527437,
+  "gap_2021_no_georgia": 260.4906224410488,
+  "gap_2021_pct_no_georgia": 6.505257784095431,
+  "intime_pre_rmspe": 178.44713655169278,
+  "intime_fake_post_rmspe": 244.8071201615838,
+  "intime_ratio": 1.3718747461698149,
+  "tourism_fitted": false
+}

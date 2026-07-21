@@ -1,0 +1,36 @@
+{
+  "artifact_2021": {
+    "n_donors": 15,
+    "weights": {
+      "Cambodia": 0.7,
+      "Myanmar": 0.3
+    },
+    "armenia_2019": 4350.466198,
+    "armenia_2020": 4012.361499,
+    "synthetic_2019": 1416.23135,
+    "synthetic_2020": 1327.70941,
+    "level_ratio_2019": 3.0718612449865623,
+    "gap_change_2020_usd": -249.5827589999999,
+    "gap_change_pct_of_armenia_2019": -5.736919852744478,
+    "armenia_growth_2020_pct": -7.771688909005514,
+    "synthetic_growth_2020_pct": -6.250528206426164,
+    "growth_differential_pp": -1.5211607025793494
+  },
+  "original_group_crosscheck": {
+    "weights": {
+      "Georgia": 0.285,
+      "Moldova": 0.544,
+      "Albania": 0.171
+    },
+    "pre_rmspe": 236.66026714274756,
+    "pre_rmspe_pct_of_mean": 9.382749074843778,
+    "residual_2019_pct": 4.507194598390239,
+    "gaps_pct": {
+      "2020": 3.01,
+      "2021": -3.59,
+      "2022": 4.1,
+      "2023": 6.79,
+      "2024": 5.45
+    }
+  }
+}

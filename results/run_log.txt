@@ -1,0 +1,97 @@
+pysyncon 1.5.2, pandas 2.3.3, numpy 2.0.2
+EDA: 31 countries pass screen; 2 dropped:
+  dropped Jordan: thin predictors (<10 pre-years): invest_gdp=8, trade_gdp=8
+  dropped Uzbekistan: thin predictors (<10 pre-years): inflation=9
+Sanity: Armenia raw gdp_pc 2019=4343.5, 2020=4032.1 (-7.17%), 2024=5378.3
+Donor pool (main spec, Georgia included): 30 donors
+Albania, Bolivia, Bosnia and Herzegovina, Cambodia, Dominican Republic, Ecuador, Egypt, Arab Rep., El Salvador, Georgia, Ghana, Guatemala, Honduras, Indonesia, Kazakhstan, Kenya, Kyrgyz Republic, Moldova, Mongolia, Morocco, Nepal, North Macedonia, Paraguay, Peru, Philippines, Rwanda, Senegal, Serbia, Tajikistan, Tunisia, Viet Nam
+Main fit: best optimizer setting Nelder-Mead/ols, loss_W=-1.185924
+Main pre-RMSPE (2000-19): 159.18 | post-RMSPE (2020-24): 232.69 | ratio: 1.46
+Armenia mean gdp_pc 2000-19: 2809.6 (pre-RMSPE is 5.67% of it)
+Weights (>=0.01):
+  Georgia: 0.413
+  Cambodia: 0.280
+  Kazakhstan: 0.128
+  Tajikistan: 0.100
+  Rwanda: 0.077
+2020 pc growth: Armenia -7.17%, donor mean -5.12%, min -13.79% (Bolivia), max +2.05% (Tajikistan)
+Predictor balance:
+                            Armenia    Synthetic   Donor mean
+invest_gdp                28.748749    26.232901    24.651336
+trade_gdp                 72.891113    93.283074    78.644053
+inflation                  3.490497     5.774355     6.435986
+pop_growth                -0.334208     0.710507     1.162160
+special.1.industry_gdp    25.828776    25.735473    27.210683
+special.2.gdp_pc        1229.215104  1430.503337  2117.909170
+special.3.gdp_pc        2240.092732  2170.837874  2538.459553
+special.4.gdp_pc        2796.081434  2841.352958  3071.210889
+special.5.gdp_pc        3512.393503  3584.363959  3584.669884
+special.6.gdp_pc        4343.458396  4213.374722  4044.569035
+  2020: Armenia=4032.1 synth=3998.0 gap=+34.1 (+0.85%)
+  2021: Armenia=4264.8 synth=4271.9 gap=-7.1 (-0.17%)
+  2022: Armenia=4791.0 synth=4559.6 gap=+231.4 (+5.08%)
+  2023: Armenia=5197.2 synth=4827.2 gap=+370.0 (+7.67%)
+  2024: Armenia=5378.3 synth=5097.2 gap=+281.1 (+5.52%)
+ATT 2020-21: +13.5 | ATT 2020-24: +181.9 | cumulative 2020-21 gap: +27.1
+
+In-space placebos:
+  placebo Albania: pre=63.3 post=259.6
+  placebo Bolivia: pre=36.1 post=351.5
+  placebo Bosnia and Herzegovina: pre=44.9 post=145.2
+  placebo Cambodia: pre=66.4 post=160.3
+  placebo Dominican Republic: pre=310.7 post=1033.2
+  placebo Ecuador: pre=185.3 post=630.4
+  placebo Egypt, Arab Rep.: pre=55.5 post=197.5
+  placebo El Salvador: pre=31.1 post=74.9
+  placebo Georgia: pre=121.0 post=901.3
+  placebo Ghana: pre=44.2 post=63.2
+  placebo Guatemala: pre=86.4 post=62.2
+  placebo Honduras: pre=31.2 post=104.4
+  placebo Indonesia: pre=25.1 post=56.9
+  placebo Kazakhstan: pre=2779.3 post=2694.8
+  placebo Kenya: pre=24.3 post=13.3
+  placebo Kyrgyz Republic: pre=30.3 post=118.0
+  placebo Moldova: pre=54.7 post=208.2
+  placebo Mongolia: pre=118.0 post=664.5
+  placebo Morocco: pre=35.9 post=96.3
+  placebo Nepal: pre=26.4 post=31.0
+  placebo North Macedonia: pre=61.6 post=114.0
+  placebo Paraguay: pre=110.7 post=285.3
+  placebo Peru: pre=113.3 post=388.9
+  placebo Philippines: pre=46.0 post=150.0
+  placebo Rwanda: pre=164.7 post=174.1
+  placebo Senegal: pre=64.9 post=105.2
+  placebo Serbia: pre=232.0 post=981.5
+  placebo Tajikistan: pre=16.0 post=127.9
+  placebo Tunisia: pre=94.0 post=773.5
+  placebo Viet Nam: pre=35.2 post=242.0
+Placebo p-values (31 units incl. Armenia): full post 2020-24 p=0.806 (rank 25); 2020-21 window p=1.000 (rank 31)
+
+Robustness: Georgia excluded
+  optimizer Nelder-Mead/ols; pre-RMSPE=168.81
+  2020: gap=+131.0 (+3.36%)
+  2021: gap=+260.5 (+6.51%)
+  2022: gap=+691.7 (+16.87%)
+  2023: gap=+945.0 (+22.22%)
+  2024: gap=+955.6 (+21.61%)
+  weights (>=0.01): Cambodia=0.710, Kazakhstan=0.214, Mongolia=0.045, Moldova=0.032
+
+Robustness: leave-one-out (donors with weight >= 0.01)
+  without Georgia: pre-RMSPE=168.81, gap2020=+131.0, gap2021=+260.5
+  without Cambodia: pre-RMSPE=162.75, gap2020=+16.1, gap2021=-153.7
+  without Kazakhstan: pre-RMSPE=165.68, gap2020=-43.7, gap2021=-252.3
+  without Tajikistan: pre-RMSPE=161.08, gap2020=+10.0, gap2021=-98.6
+  without Rwanda: pre-RMSPE=159.96, gap2020=+11.0, gap2021=-70.2
+
+Robustness: in-time placebo (fake treatment 2015, fit 2000-2014)
+  optimizer Nelder-Mead/ols; pre-RMSPE(2000-14)=178.45, fake-post RMSPE(2015-19)=244.81, ratio=1.37
+  2015: gap=+55.2 (+1.60%)
+  2016: gap=+34.4 (+0.98%)
+  2017: gap=+196.5 (+5.43%)
+  2018: gap=+267.9 (+7.13%)
+  2019: gap=+430.1 (+10.99%)
+
+Tourism check: Armenia pre-coverage 20/20, post years available [2020], qualifying donors 21
+  tourism data does NOT support a credible secondary fit -> skipped
+
+Placebo figure: 29 placebos shown, 1 excluded (pre-RMSPE > 5x Armenia's): ['Kazakhstan']
