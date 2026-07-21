@@ -11,12 +11,18 @@ COVID but no war, then compare real Armenia to it.
 
 A finished study already lives in this repo ([paper.pdf](paper.pdf)). It
 continues and recreates earlier research on the same question. **Your job: first
-recreate it, then extend it.** All three of you do the same steps, each on your
-own — then we combine your work into one updated paper you're all authors on.
+recreate it, then extend it.**
+
+**Each of you works through the entire project lifecycle end to end — on your
+own.** You are *not* splitting the project into three jobs. Every one of you does
+all six steps below: set up and recreate the study, understand it, add your own
+variables, do your own data analysis, build your own dashboard, and write your
+own post. Then we combine the three of your extensions into one updated paper
+you're all authors on.
 
 You each pick *different* variables, so at the end we can see how well the result
 holds up across three independent takes. That's why all three of you do the whole
-thing instead of splitting it up.
+lifecycle instead of dividing it up.
 
 ## Rules (short and important)
 
