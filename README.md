@@ -15,16 +15,6 @@ counterfactual, consistent with the post-2022 Russian relocation inflow, not
 with the 2020 treatment; that gap triples without Georgia in the pool, and we
 report the fragility as a finding.
 
-> **Status — independent project (2026).** A standalone effort
-> (EconArmeniaSyntheticProject), separate from DataPoint Armenia but building on
-> and referencing their 2021 exploration: Gary V. with student contributors
-> Luke, Shreyas, and Anirudh. The 2021 origin team (Nanneh C., Ruben D., and
-> Gary V.) is credited as prior work; they have agreed to this framing. The
-> repo is public so the team can show their work; external outputs (a deployed
-> dashboard, Medium posts) still get Gary's OK before they go live. Student
-> worklist: [ONBOARDING.md](ONBOARDING.md).
-
-
 ## Layout
 
 ```
